@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scent N Stories Pakistan — discover fragrance stories, signature scent profiles, and thoughtful gifting.">
+  <meta name="theme-color" content="#17120f">
+  <title>Scent N Stories Pakistan | Every Scent Tells a Story</title>
+  <style>
+    :root{--ink:#211813;--cream:#f8f3eb;--paper:#fffdf9;--gold:#c49a58;--muted:#74665a;--wine:#5b282e;--line:#e7ddd0;--green:#34463b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(1140px,92%);margin:auto}
+    .announcement{background:var(--wine);color:#fff;text-align:center;padding:9px 15px;font-size:.82rem;letter-spacing:.07em}
+    header{background:rgba(248,243,235,.94);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}.brand{display:flex;align-items:center;gap:11px;font-family:Georgia,serif;font-size:1.12rem;font-weight:700;letter-spacing:.02em}
+    .monogram{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:1.15rem}
+    .brand small{display:block;font: .64rem/1.4 Inter, sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+    .links{display:flex;align-items:center;gap:25px;font-size:.9rem}.links a:hover{color:var(--wine)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--ink);padding:12px 19px;transition:.2s;cursor:pointer;font-weight:650;font-size:.9rem}
+    .nav-cta,.btn.dark{background:var(--ink);color:white}.nav-cta:hover,.btn.dark:hover{background:var(--wine);border-color:var(--wine)}.btn.light{background:transparent}.btn.light:hover{background:#fff}
+    .hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:92px 0 84px}
+    .hero:before{content:"";position:absolute;width:550px;height:550px;border-radius:50%;right:-110px;top:-210px;background:radial-gradient(circle at 35% 35%,#b58b55 0,#634735 27%,#2b211b 64%,transparent 70%);opacity:.8}
+    .hero:after{content:"";position:absolute;right:9%;bottom:-140px;width:370px;height:370px;border:1px solid rgba(196,154,88,.4);border-radius:50%;box-shadow:0 0 0 28px rgba(196,154,88,.04),0 0 0 56px rgba(196,154,88,.04)}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px}
+    .eyebrow{color:var(--gold);font-size:.75rem;text-transform:uppercase;letter-spacing:.22em;font-weight:750}.hero h1{font:clamp(3rem,6.5vw,5.8rem)/.99 Georgia,serif;letter-spacing:-.045em;margin:20px 0}.hero h1 em{color:var(--gold);font-weight:400}.hero p{max-width:530px;color:#e0d5c8;font-size:1.05rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero .btn.light{color:white;border-color:#8b7a6b}.hero-note{margin-top:32px;color:#c8b8a7;font-size:.82rem;letter-spacing:.06em}
+    .bottle-scene{min-height:390px;display:grid;place-items:center;position:relative}.halo{position:absolute;width:330px;height:330px;border-radius:50%;border:1px solid rgba(196,154,88,.5);box-shadow:0 0 70px rgba(196,154,88,.13),inset 0 0 50px rgba(196,154,88,.08)}
+    .bottle{position:relative;width:170px;height:245px;border:1px solid #c6a875;border-radius:25px 25px 32px 32px;background:linear-gradient(110deg,rgba(255,255,255,.42),rgba(179,123,59,.15) 26%,rgba(245,213,154,.3) 49%,rgba(80,45,24,.7));box-shadow:inset 12px 0 18px rgba(255,255,255,.1),25px 35px 45px rgba(0,0,0,.35);transform:rotate(-4deg)}
+    .bottle:before{content:"";position:absolute;top:-42px;left:55px;width:60px;height:43px;background:linear-gradient(90deg,#7e5b35,#d3b476,#76502e);border-radius:6px 6px 1px 1px}.bottle:after{content:"S N S\\A PARFUM";white-space:pre;position:absolute;top:82px;left:18px;right:18px;padding:18px 0;text-align:center;border:1px solid rgba(196,154,88,.75);color:#f1d7a5;font:12px/1.8 Georgia,serif;letter-spacing:.12em}
+    .floating{position:absolute;background:#f8f3eb;color:var(--ink);padding:12px 16px;box-shadow:0 12px 30px #0003;font:italic 1rem Georgia,serif}.float-one{top:43px;right:2px;transform:rotate(5deg)}.float-two{bottom:35px;left:0;transform:rotate(-5deg)}
+    section{padding:84px 0}.section-head{max-width:690px;margin:0 auto 42px;text-align:center}.kicker{color:var(--wine);font-size:.74rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.section-head h2{font:clamp(2.2rem,4vw,3.6rem)/1.08 Georgia,serif;letter-spacing:-.035em;margin:12px 0}.section-head p{color:var(--muted);margin:0}
+    .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pillar{background:var(--paper);padding:28px;border:1px solid var(--line)}.pillar .num{font:2.4rem Georgia,serif;color:var(--gold)}.pillar h3{font:1.4rem Georgia,serif;margin:10px 0}.pillar p{color:var(--muted);margin:0;font-size:.94rem}
+    .collection{background:#efe6da}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:var(--paper);border:1px solid #e4d6c6}.product-art{height:245px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(145deg,#e6d2b3,#f4eadd)}.product:nth-child(2) .product-art{background:linear-gradient(145deg,#d7c0b5,#f0e0d4)}.product:nth-child(3) .product-art{background:linear-gradient(145deg,#c8c8ad,#e9e4ce)}
+    .mini-bottle{width:95px;height:140px;border:1px solid #ad8754;border-radius:13px 13px 19px 19px;background:linear-gradient(100deg,#fff8e9aa,#a36f3a88,#fff0c688);position:relative;box-shadow:14px 20px 25px #49301d30;transform:rotate(4deg)}.mini-bottle:before{content:"";position:absolute;width:34px;height:25px;top:-25px;left:30px;background:linear-gradient(90deg,#73502c,#c8a46b,#74512f);border-radius:3px 3px 0 0}.mini-bottle:after{content:"SCENT\\A N STORIES";white-space:pre;position:absolute;top:52px;left:6px;right:6px;text-align:center;color:#5e4025;font:9px/1.6 Georgia,serif;letter-spacing:.06em}.product-info{padding:22px}.product-info .type{font-size:.7rem;color:var(--wine);letter-spacing:.14em;text-transform:uppercase;font-weight:800}.product-info h3{font:1.45rem Georgia,serif;margin:7px 0}.product-info p{font-size:.9rem;color:var(--muted);margin:0 0 14px}.notes{font-size:.78rem;color:#665344;border-top:1px solid var(--line);padding-top:12px}
+    .story-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.story-art{min-height:390px;background:var(--green);position:relative;display:grid;place-items:center;overflow:hidden;color:#f8e8c7}.story-art:before,.story-art:after{content:"";position:absolute;border:1px solid #d2b1767a;border-radius:50%;width:270px;height:270px}.story-art:after{width:340px;height:340px}.story-art strong{z-index:1;text-align:center;font:clamp(2.4rem,4vw,4rem)/1 Georgia,serif;max-width:280px;font-weight:400}.story-copy h2{font:clamp(2.3rem,4vw,3.6rem)/1.06 Georgia,serif;letter-spacing:-.04em;margin:12px 0 20px}.story-copy p{color:var(--muted)}.checks{list-style:none;padding:0;margin:22px 0}.checks li{margin:11px 0}.checks li:before{content:"✦";color:var(--gold);margin-right:10px}
+    .strategy{background:#211813;color:white}.strategy .section-head p{color:#c6b8a9}.strategy .kicker{color:var(--gold)}.framework-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.framework{border:1px solid #5c4c40;padding:22px;background:#2b211b}.framework .tag{color:var(--gold);font-size:.72rem;font-weight:800;letter-spacing:.13em}.framework h3{font:1.25rem Georgia,serif;margin:9px 0}.framework p{font-size:.86rem;color:#c9bdb1;margin:0}
+    .funnel{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.funnel-card{padding:24px;border-top:3px solid var(--gold);background:#30241e}.funnel-card h3{font:1.4rem Georgia,serif;margin:0 0 8px}.funnel-card p{font-size:.88rem;color:#c9bdb1;margin:0}.funnel-card span{display:inline-block;font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:var(--gold);margin-bottom:10px}
+    .force-list{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.force{padding:20px 16px;background:var(--paper);border:1px solid var(--line)}.force b{display:block;font:1.08rem Georgia,serif;margin-bottom:8px}.force p{font-size:.82rem;color:var(--muted);margin:0}
+    .contact{background:#eee3d5}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}.contact h2{font:clamp(2.5rem,4vw,3.8rem)/1 Georgia,serif;margin:12px 0}.contact p{color:var(--muted)}.contact-detail{display:flex;gap:13px;align-items:center;margin:22px 0}.contact-detail .symbol{width:42px;height:42px;border:1px solid #cbb89e;display:grid;place-items:center;color:var(--wine)}.contact-detail small{display:block;color:var(--muted)}.contact-form{background:var(--paper);padding:28px;border:1px solid var(--line)}.field{margin-bottom:15px}.field label{display:block;font-size:.8rem;font-weight:700;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;border:1px solid #d9ccbd;background:#fffdf9;padding:12px;color:var(--ink);outline-color:var(--gold)}.field textarea{min-height:105px;resize:vertical}.contact-form .btn{width:100%}.form-note{font-size:.76rem;color:var(--muted);margin-top:10px}
+    footer{background:#17120f;color:#cbbeb0;padding:27px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:.8rem}.footer-brand{color:#f8f3eb;font-family:Georgia,serif;font-size:1rem}.footer-links{display:flex;gap:18px}
+    .toast{display:none;margin-top:12px;padding:12px;background:#e4eee4;color:#24462d;font-size:.85rem}.toast.show{display:block}
+    @media(max-width:850px){.links{gap:13px}.links a:not(.nav-cta){display:none}.hero-grid,.story-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:68px 0}.bottle-scene{min-height:320px}.pillars,.products{grid-template-columns:1fr 1fr}.framework-grid{grid-template-columns:1fr 1fr}.force-list{grid-template-columns:repeat(2,1fr)}.story-art{min-height:300px}}
+    @media(max-width:540px){.brand{font-size:.96rem}.nav{min-height:68px}.nav-cta{padding:10px 12px;font-size:.8rem}.hero h1{font-size:3.2rem}.pillars,.products,.funnel{grid-template-columns:1fr}.framework-grid{grid-template-columns:1fr 1fr}.force-list{grid-template-columns:1fr 1fr}section{padding:62px 0}.footer-row{align-items:flex-start;flex-direction:column}.bottle-scene{min-height:300px}.halo{width:260px;height:260px}.floating{font-size:.86rem}}
+  </style>
+</head>
+<body>
+  <div class="announcement">A LITTLE LUXURY, A LASTING MEMORY · SCENT N STORIES PAKISTAN</div>
+  <header>
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="monogram">S<span style="font-size:.7em">N</span>S</span><span>Scent N Stories<small>Pakistan · Fragrance House</small></span></a>
+      <div class="links"><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#strategy">Our Approach</a><a href="#contact" class="nav-cta">Get in touch ↗</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Fragrance · Feeling · Identity</div>
+          <h1>Every scent<br>tells <em>a story.</em></h1>
+          <p>Discover fragrance as a personal signature. Scent N Stories Pakistan brings together memorable scent profiles, thoughtful gifting, and the little details that make a moment unforgettable.</p>
+          <div class="actions"><a class="btn dark" href="#collection">Explore the collection ↗</a><a class="btn light" href="#story">Discover our story</a></div>
+          <div class="hero-note">MADE FOR YOUR MOMENTS · DESIGNED TO BE REMEMBERED</div>
+        </div>
+        <div class="bottle-scene" aria-label="Decorative perfume bottle illustration"><div class="halo"></div><div class="bottle"></div><div class="floating float-one">Your signature, your story</div><div class="floating float-two">Find your feeling ✦</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">The Scent N Stories difference</div><h2>More than a fragrance.<br>A feeling you keep.</h2><p>We believe the right scent can become part of your personal story—from everyday confidence to special celebrations.</p></div>
+        <div class="pillars">
+          <article class="pillar"><div class="num">01</div><h3>Find your signature</h3><p>Explore scent families and discover the notes that feel most like you.</p></article>
+          <article class="pillar"><div class="num">02</div><h3>Gift with meaning</h3><p>Turn birthdays, celebrations, and thank-you moments into thoughtful memories.</p></article>
+          <article class="pillar"><div class="num">03</div><h3>Make it memorable</h3><p>A considered brand experience, from the first impression to the final note.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Explore the mood</div><h2>Stories in every note</h2><p>Sample collection concepts for the brand presentation. Final products, sizes, and prices can be added when confirmed.</p></div>
+        <div class="products">
+          <article class="product"><div class="product-art"><div class="mini-bottle"></div></div><div class="product-info"><div class="type">Warm · Woody · Refined</div><h3>Amber Chapter</h3><p>A warm, polished scent concept for evenings, celebrations, and confident entrances.</p><div class="notes">Mood: Amber · Woods · Soft spice</div></div></article>
+          <article class="product"><div class="product-art"><div class="mini-bottle"></div></div><div class="product-info"><div class="type">Fresh · Floral · Effortless</div><h3>Petal & Poetry</h3><p>A light, graceful scent concept inspired by fresh beginnings and everyday moments.</p><div class="notes">Mood: Petals · Citrus · Clean musk</div></div></article>
+          <article class="product"><div class="product-art"><div class="mini-bottle"></div></div><div class="product-info"><div class="type">Deep · Smooth · Mysterious</div><h3>Midnight Memoir</h3><p>A rich, expressive scent concept for those who prefer a deeper, lasting impression.</p><div class="notes">Mood: Woods · Spice · Velvet accords</div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="wrap story-grid">
+        <div class="story-art"><strong>Wear<br>your story.</strong></div>
+        <div class="story-copy"><div class="kicker">Our philosophy</div><h2>A scent is a memory in the making.</h2><p>Scent N Stories Pakistan is built around one simple idea: fragrance is personal. It can remind us of a place, mark a milestone, or help us feel ready for what comes next.</p><p>Our brand experience is designed to make fragrance discovery feel clear, welcoming, and special—with a focus on scent storytelling, useful guidance, and meaningful gifting.</p><ul class="checks"><li>Discover by mood and scent family</li><li>Choose a fragrance for yourself or someone special</li><li>Connect with us for product and gifting guidance</li></ul><a class="btn dark" href="#contact">Let's find your scent ↗</a></div>
+      </div>
+    </section>
+
+    <section class="strategy" id="strategy">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Digital marketing strategy</div><h2>A brand built with strategy.</h2><p>This project brings key marketing frameworks into one coherent customer journey—from awareness to consideration and conversion.</p></div>
+        <div class="framework-grid">
+          <article class="framework"><div class="tag">THE 4 Ps</div><h3>Marketing mix</h3><p><b>Product:</b> fragrance stories. <b>Price:</b> value-led tiers to be finalised. <b>Place:</b> digital-first in Pakistan. <b>Promotion:</b> content, creators, and campaigns.</p></article>
+          <article class="framework"><div class="tag">SWOT</div><h3>Strategic lens</h3><p><b>Strength:</b> memorable storytelling. <b>Opportunity:</b> social commerce. <b>Challenge:</b> trust-building online. <b>Response:</b> transparent details and useful content.</p></article>
+          <article class="framework"><div class="tag">AIDA</div><h3>Message journey</h3><p><b>Attention:</b> bold scent visuals. <b>Interest:</b> note guides. <b>Desire:</b> occasion-led stories. <b>Action:</b> clear enquiry and purchase CTAs.</p></article>
+          <article class="framework"><div class="tag">SEO + CONTENT</div><h3>Get discovered</h3><p>Use relevant fragrance keywords, descriptive page titles, helpful scent guides, image alt text, and consistent social content.</p></article>
+        </div>
+        <div class="section-head" style="margin-top:55px;margin-bottom:25px"><div class="kicker">Full-funnel thinking</div><h2 style="font-size:2.5rem">TOFU → MOFU → BOFU</h2><p>Give people the right message at the right stage.</p></div>
+        <div class="funnel">
+          <article class="funnel-card"><span>01 · Awareness</span><h3>TOFU</h3><p>Reels, scent mood boards, fragrance myths, seasonal posts, and shareable storytelling to reach new audiences.</p></article>
+          <article class="funnel-card"><span>02 · Consideration</span><h3>MOFU</h3><p>Scent-family guides, comparison content, FAQs, gifting guides, and email/WhatsApp opt-ins to build confidence.</p></article>
+          <article class="funnel-card"><span>03 · Conversion</span><h3>BOFU</h3><p>Clear product details, social proof when available, a simple enquiry path, limited-time campaigns only when genuine, and follow-up service.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Competitive landscape</div><h2>Porter’s Five Forces</h2><p>A practical snapshot of the fragrance market and how the brand can respond.</p></div>
+        <div class="force-list">
+          <article class="force"><b>Competitive rivalry</b><p>Differentiate through a recognisable visual identity, helpful education, and a consistent brand voice.</p></article>
+          <article class="force"><b>New entrants</b><p>Build trust with quality information, reliable service, and a distinctive customer experience.</p></article>
+          <article class="force"><b>Buyer power</b><p>Help shoppers compare scent profiles, occasions, value, and gifting options clearly.</p></article>
+          <article class="force"><b>Supplier power</b><p>Develop dependable supplier relationships and document product standards as the business grows.</p></article>
+          <article class="force"><b>Substitutes</b><p>Compete on personal expression, discovery guidance, and the emotional value of gifting.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div><div class="kicker">Start a conversation</div><h2>Let your next story begin here.</h2><p>Questions about fragrance, gifting, or collaboration? Get in touch with Scent N Stories Pakistan.</p>
+          <div class="contact-detail"><div class="symbol">☎</div><div><small>Call / WhatsApp</small><a href="tel:+923451236897"><strong>0345 1236 897</strong></a></div></div>
+          <div class="contact-detail"><div class="symbol">✉</div><div><small>Email</small><a href="mailto:digitalmarketer1293@gmail.com"><strong>digitalmarketer1293@gmail.com</strong></a></div></div>
+          <p style="font-size:.84rem">Digital-first fragrance brand · Pakistan</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3 style="font:1.65rem Georgia,serif;margin:0 0 20px">Send an enquiry</h3>
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required></div>
+          <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div>
+          <div class="field"><label for="interest">I'm interested in</label><select id="interest" name="interest"><option>Fragrance enquiry</option><option>Gift recommendation</option><option>Brand collaboration</option><option>Digital marketing project</option></select></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you're looking for..." required></textarea></div>
+          <button class="btn dark" type="submit">Prepare email enquiry ↗</button>
+          <div class="form-note">This form opens your email app with the enquiry details. No information is stored on this website.</div>
+          <div class="toast" id="formToast" role="status">Your email draft is ready. If it did not open, email us directly at digitalmarketer1293@gmail.com.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-row"><div><div class="footer-brand">Scent N Stories Pakistan</div><div>Every scent tells a story.</div></div><div class="footer-links"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#contact">Contact</a></div><div>© <span id="year"></span> Scent N Stories</div></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const data = new FormData(this);
+      const subject = encodeURIComponent('Website enquiry — ' + data.get('interest'));
+      const body = encodeURIComponent('Name: ' + data.get('name') + '\\nEmail: ' + data.get('email') + '\\nInterest: ' + data.get('interest') + '\\n\\nMessage:\\n' + data.get('message'));
+      document.getElementById('formToast').classList.add('show');
+      window.location.href = 'mailto:digitalmarketer1293@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
